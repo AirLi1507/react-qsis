@@ -1,0 +1,155 @@
+
+:root {
+    --red: red;
+    --orange: orange;
+    --yellow: #ffeb00;
+    --green: #36ff36;
+    --teal: teal;
+    --aqua: aqua;
+    --skyblue: skyblue;
+    --blue1: #2855bf;
+    --blue2: #2828bf;
+    --purple: #c200c2;
+    --white: white;
+    --grey: #acacac;
+    --black: #120f1a;
+
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-gray: #adb5bd;
+}
+
+.default-only {cursor: default;}
+.wait {cursor: wait;}
+.select {cursor: text;}
+.clickable {cursor: pointer;}
+.prohibited {cursor: not-allowed;}
+
+.pos-abs {position: absolute;}
+.pos-rel {position: relative;}
+
+.float-left {float: left;}
+.float-right {float: right;}
+
+.jc-center {justify-content: center;}
+.jc-start {justify-content: start;}
+.jc-end {justify-content: end;}
+
+.width-100vw {width: 100dvw;}
+.height-100vh {height: 100dvh;}
+
+.width-100 {width: 100%;}
+.height-100 {height: 100%;}
+
+.width-fc {width: fit-content;}
+.height-fc {height: fit-content;}
+
+.wh-100 {width: 100%; height: 100%;}
+.wh-max {width: 100vw; height: 100vh;}
+
+.mg-left-auto {margin-left: auto;}
+.mg-right-auto {margin-right: auto;}
+.mx-auto {margin: 0 auto;}
+.my-auto {margin: auto 0;}
+.mg-auto {margin: auto;}
+
+.flex {display: flex;}
+
+h1,h2,h3,h4,h5,h6,p,span {margin: 0;}
+
+/* Font Misc - Start */
+
+.text-shadow {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* Font Misc - End */
+
+/* Font Weight - Start */
+
+.fw-1 {font-weight: 100;}
+.fw-2 {font-weight: 200;}
+.fw-3 {font-weight: 300;}
+.fw-4 {font-weight: 400;}
+.fw-5 {font-weight: 500;}
+.fw-6 {font-weight: 600;}
+.fw-7 {font-weight: 700;}
+.fw-8 {font-weight: 800;}
+.fw-9 {font-weight: 900;}
+
+.bold {font-weight: bold;}
+.light {font-weight: lighter;}
+
+/* Font Weight - End */
+
+/* Font Color - Start */
+
+.red {color: red;}
+
+.orange {color: orange;}
+
+.yellow {color: #ffeb00;}
+
+.green {color: #36ff36;}
+
+.teal {color: teal;}
+
+.aqua {color: aqua;}
+
+.skyblue {color: skyblue;}
+
+.blue1 {color: #2855bf;}
+
+.blue2 {color: #2828bf;}
+
+.purple {color: #c200c2;}
+
+.white {color: white;}
+
+.grey {color: #acacac;}
+
+.black {color: #120f1a;}
+
+/* Font Color - End */
+
+/* Mobile - Start */
+
+@media (min-width: 576px) {
+
+}
+
+/* Mobile - End */
+
+/* Tablets - Start */
+
+@media (min-width: 992px) {
+
+}
+
+/* Tablets - End */
+
+/* Desktop - Start */
+
+@media (min-width: 992px) {
+    .p-1 {padding: 0.5rem;}
+}
+
+/* Desktop - End */
