@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../ViewBtn.css';
+import './ViewBtn.css';
 
 
 

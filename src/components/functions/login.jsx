@@ -1,6 +1,6 @@
-import { warnTextRemove } from "./rmWarnText";
-import { AddWarnText } from './warnText';
-import cyptjs from 'crypto-js';
+import { warnTextRemove } from "./rmWarnText"
+import { AddWarnText } from './warnText'
+import cyptjs from 'crypto-js'
 
 async function getKey() {
     const response = await fetch(`https://api.hypernix.org/key`, {
@@ -8,17 +8,17 @@ async function getKey() {
         headers: {
             'Content-Type': 'application/json'
         }
-    });
+    })
 
     const key = await response.text()
-    return key;
+    return key
 }
 
 
 async function post(cred) {
-    const Key = await getKey();
+    const Key = await getKey()
 
-    const encrypted = cyptjs.AES.encrypt(cred, Key).toString();
+    const encrypted = cyptjs.AES.encrypt(cred, Key).toString()
 
     fetch(`https://api.hypernix.org/auth`, {
         method: 'POST',
@@ -32,26 +32,29 @@ async function post(cred) {
         if (data === true) {
             alert('OK')
         } else {
-            document.getElementById('loginBtn').after(AddWarnText('Login failed. Please check your username or password.'));
-            document.querySelector('.warnText').classList.add('mt-3');
+            document.querySelectorAll('.buttons')[0].after(AddWarnText('Login failed. Please check your username or password.'))
+            document.querySelector('.warnText').classList.add('mt-3')
         }
     })
-};
+}
 
 export function login() {
-    warnTextRemove();
+    warnTextRemove()
 
-    const username = document.getElementById('fieldID').value;
-    const password = document.getElementById('fieldPassword').value;
+    const username = document.getElementById('fieldID').value
+    const password = document.getElementById('fieldPassword').value
 
     if (username === '' && password === '') {
-        document.getElementsByClassName('field')[0].after(AddWarnText('The username field must be filled.'));
-        document.getElementsByClassName('field')[1].after(AddWarnText('The password field must be filled.'));
+        document.getElementsByClassName('field')[0].after(AddWarnText('The username field must be filled.'))
+        document.getElementsByClassName('field')[1].after(AddWarnText('The password field must be filled.'))
     } else if (username === '') {
-        document.getElementsByClassName('field')[0].after(AddWarnText('The username field must be filled.'));
+        document.getElementsByClassName('field')[0].after(AddWarnText('The username field must be filled.'))
     } else if (password === '') {
-        document.getElementsByClassName('field')[1].after(AddWarnText('The password field must be filled.'));
+        document.getElementsByClassName('field')[1].after(AddWarnText('The password field must be filled.'))
     } else {
-        post(username + password);
+        const credArray = []
+        credArray.push(username)
+        credArray.push(password)
+        post(credArray.toString())
     }
 }
