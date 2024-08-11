@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Background from './components/background/background';
+import Login from './components/loginbox/loginBox';
 import './index.css';
 
-const title = <h1 className='prohibited width-fc red fw-2'>SUS</h1>
+const App = () => {
 
-const div = (
+    return ( 
+        <Background>
+            <Login />
+        </Background>
+    );
+}
 
-<div class="flex width-100vw jc-start height-fc">
-    {title}
-</div>
-
-)
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(div);
+const Root = ReactDOM.createRoot(document.getElementById('root'));
+Root.render(App());

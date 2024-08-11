@@ -1,9 +1,31 @@
 @import url(better-css.css);
 
+:root {
+    --acsent-color-1: #00356B;
+    --acsent-color-2: #387580;
+    --active-color: #42a49f;
+    --box-shadow-1: 0.3vh 0.3vh 1vh rgba(0, 0, 0, 0.3);
+    --border-1: 2px rgba(165, 225, 255, 0.3) solid;
+    --border-color-1: rgb(152, 196, 235);
+    --bg-color: rgba(180, 240, 255, 0.2);
+    --text-shadow-1: 1px 1px 5px rgba(40, 105, 133, 0.3);
+    --text-shadow-2: 1px 1px 8px rgba(143, 221, 255, 0.8);
+    --text-shadow-3: 1px 1px 2px rgba(40, 105, 133, 0.35);
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans';
+    letter-spacing: -0.4px;
 
     margin: 0;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image:  url('/public/images/organization_background_image.jpg');
+    -webkit-backdrop-filter: brightness(0.6);
+    backdrop-filter: brightness(0.75);
+    box-shadow: inset 0 0 3vh rgba(255, 255, 255, 0.5);
 
     padding: 0;
     box-sizing: border-box;
@@ -12,3 +34,5 @@ body {
 }
 
 *::-webkit-scrollbar {display: none;}
+
+.symbol {font-family: "Material Symbols Outlined";}

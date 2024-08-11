@@ -1,0 +1,31 @@
+#viewPassword {
+    color: var(--acsent-color-2);
+
+    margin-right: 12px;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* @media (min-width: 320px) {
+    #viewPassword {
+        right: 20px;
+    }
+}
+
+@media (min-width: 576px) {
+    #viewPassword {
+        right: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    #viewPassword {
+        right: 22px;
+    }
+}
+
+@media (min-width: 992px) {
+    #viewPassword {
+        margin-right: 12px;
+    }
+} */

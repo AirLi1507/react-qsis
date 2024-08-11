@@ -1,0 +1,8 @@
+label.inputHint {
+    color: var(--acsent-color-2);
+    text-shadow: var(--text-shadow-3);
+}
+
+span.inputHint {
+    margin-left: 6px;
+}

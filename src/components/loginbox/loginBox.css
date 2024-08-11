@@ -1,0 +1,92 @@
+#login {
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow-1);
+    border: var(--border-1);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    display: flex;
+    flex-direction: column;
+
+    transition: all .05s ease-in-out;
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    #login {
+        min-width: 325px;
+        transform: scale(.975);
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    #login {
+        min-width: 350px;
+        transform: scale(.975);
+    }
+}
+
+@media (min-width: 320px) {
+    #login {
+        max-width: 65svw;
+    }
+}
+
+@media (min-width: 576px) {
+    #login {
+        max-width: 45svw;
+    }
+}
+
+@media (min-width: 768px) {
+    #login {
+        max-width: 40svw;
+    }
+}
+
+@media (min-width: 868px) {
+    #login {
+        max-width: 30svw;
+    }
+}
+
+@media (min-width: 900px) {
+    #login {
+        max-width: 28svw;
+    }
+}
+
+@media (max-height: 390px) and (orientation: landscape) {
+    #login {
+        max-height: fit-content;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        
+        padding-left: 20px;
+
+        transform: scale(.95);
+    }
+}
+
+@media (max-height: 410px) and (orientation: landscape) {
+    #login {
+        min-width: 35vw;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        
+        padding-left: 20px;
+    }
+}
+
+@media (max-height: 585px) and (orientation: landscape) {
+    #login {
+        min-width: 60svw;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8%;
+        
+        padding-left: 30px;
+    }
+}

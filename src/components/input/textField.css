@@ -1,0 +1,67 @@
+.field {
+    height: fit-content;
+    background-color: #ffffff4d;
+    border-radius: 10px;
+    border: .85px var(--border-color-1) solid;
+
+    box-sizing: border-box;
+
+    transition: all 0.2s ease;
+}
+
+.field:hover, .field:focus-within {
+    background-color: #f0f8ff99;
+}
+
+:nth-child(1 of label.inputHint):hover ~ :nth-child(1 of .field) {
+    background-color: #f0f8ff99;
+}
+
+:nth-child(2 of label.inputHint):hover ~ :nth-child(2 of .field) {
+    background-color: #f0f8ff99;
+}
+
+input[type="text"], input[type="password"] {
+    color: var(--acsent-color-2);
+    font-family: "Roboto", sans-serif;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    padding: 12px;
+}
+
+input#fieldPassword {
+    padding-right: 7px;
+}
+
+input::-ms-reveal, input::-ms-clear{display: none;}
+
+@media (min-width: 320px) {
+    input[type="text"], input[type="password"] {
+        color: var(--acsent-color-2);
+
+        font-family: "Roboto", sans-serif;
+    
+        background: transparent;
+        border: none;
+        outline: none;
+    
+        padding: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    input[type="text"], input[type="password"] {
+        color: var(--acsent-color-2);
+
+        font-family: "Roboto", sans-serif;
+    
+        background: transparent;
+        border: none;
+        outline: none;
+    
+        padding: 10px;
+    }
+}

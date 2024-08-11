@@ -1,0 +1,16 @@
+.hyperLink {
+    color: var(--acsent-color-2);
+    text-shadow: var(--text-shadow-1);
+    text-decoration: none;
+
+    outline: none;
+
+    transition: all 0.3s ease;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+.hyperLink:hover, .hyperLink:active, .hyperLink:focus {
+    color: #f0f8ff;
+    text-shadow: var(--text-shadow-3);
+}

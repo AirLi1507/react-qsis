@@ -1,0 +1,4 @@
+.warnText {
+    text-shadow: var(--text-shadow-3);
+    max-width: 310px
+}
