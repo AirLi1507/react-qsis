@@ -1,4 +1,4 @@
-# qsis-frontend-demo
+# QSIS 3 feat. ReactJS
 ## Frontend Demo for QSIS by Air Li
 ---
 #### 👋 Hello there! 💬
