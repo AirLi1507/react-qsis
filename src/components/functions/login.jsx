@@ -52,9 +52,11 @@ export function login() {
     } else if (password === '') {
         document.getElementsByClassName('field')[1].after(AddWarnText('The password field must be filled.'))
     } else {
-        const credArray = []
-        credArray.push(username)
-        credArray.push(password)
-        post(credArray.toString())
+        setTimeout(() => {            
+            const credArray = []
+            credArray.push(username)
+            credArray.push(password)
+            post(credArray.toString())
+        }, 1);
     }
 }

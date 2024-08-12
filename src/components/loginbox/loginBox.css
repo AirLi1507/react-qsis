@@ -28,31 +28,42 @@
 
 @media (min-width: 320px) {
     #login {
-        max-width: 65svw;
+        max-width: 75svw;
+        transform: scale(.925);
     }
 }
 
 @media (min-width: 576px) {
     #login {
         max-width: 45svw;
+        transform: scale(1);
     }
 }
 
 @media (min-width: 768px) {
     #login {
         max-width: 40svw;
+        transform: scale(1);
     }
 }
 
 @media (min-width: 868px) {
     #login {
-        max-width: 30svw;
+        max-width: 32svw;
+        transform: scale(1);
     }
 }
 
 @media (min-width: 900px) {
     #login {
         max-width: 28svw;
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 1440px) {
+    #login {
+        transform: scale(1);
     }
 }
 
