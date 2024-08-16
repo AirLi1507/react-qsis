@@ -1,3 +1,4 @@
+import { renderPage } from '../functions/render';
 import { warnTextRemove } from "./rmWarnText"
 import { AddWarnText } from './warnText'
 import cyptjs from 'crypto-js'
@@ -30,7 +31,7 @@ async function post(cred) {
     .then(response => {return response.json()})
     .then(data => {
         if (data === true) {
-            alert('OK')
+            renderPage('home')
         } else {
             document.querySelectorAll('.buttons')[0].after(AddWarnText('Login failed. Please check your username or password.'))
             document.querySelector('.warnText').classList.add('mt-3')

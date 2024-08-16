@@ -1,0 +1,27 @@
+#sidebar {
+    width: 18svw;
+
+    margin-right: 1vw;
+
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow-1);
+    border: var(--border-1);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+#nav-list {
+    margin-top: 24px;
+
+    overflow-y: scroll;
+}
+
+.brand {
+    border-bottom: 2px var(--acsent-color-1) solid;
+
+    justify-content: space-between;
+    gap: 8px;
+
+    padding: 16px 0 8px 0;
+}

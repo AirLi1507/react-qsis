@@ -1,7 +1,15 @@
 import './home.css';
+import Sidebar from './sidebar/sidebar';
 
-export default function Home() {
+function Home() {
     return (
-        <h1>Home Page</h1>
+        <>
+        <div className='wh-100 d-flex row p-6'>
+            <Sidebar />
+            <div className='p-4' id='home'>1</div>
+        </div>
+        </>
     )
 }
+
+export default Home

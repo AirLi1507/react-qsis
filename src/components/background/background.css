@@ -1,8 +1,13 @@
-#bg {
+.bg-overlay {
     background-size: cover;
     background-image: url('/public/images/organization_background_image.jpg');
     filter: saturate(1.5);
-    -webkit-filter: saturate(1.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     border-radius: calc(1vw + 1vh);
-    box-shadow: inset 0px 0px 1.5vh rgb(0, 0, 0, 0.7);
+    box-shadow: inset 0px 0px 1.5vh rgba(0, 0, 0, 0.7);
 }
+

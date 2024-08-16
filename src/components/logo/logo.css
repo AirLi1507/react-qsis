@@ -1,18 +1,10 @@
 .sq {
-    content: '';
-
-    text-align: center;
-
-    box-sizing: border-box;
-
     width: var(--circle-size-1);
     height: var(--circle-size-1);
 
-    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.4);
 
-    display: block;
-
-    transition: all 0.5s ease;
+    transition: .5s ease;
 }
 
 .sq0 {
@@ -28,10 +20,10 @@
     transition: 35s ease;
 }
 
-.sq1 {background-color: #ffc955;}
-.sq2 {background-color: #992f15;}
-.sq3 {background-color: #044cf3;}
-.sq4 {background-color: #f20d20;}
+.sq1 {background-color: #ffc719;}
+.sq2 {background-color: #ae2000;}
+.sq3 {background-color: #004eff;}
+.sq4 {background-color: #fa0010;}
 
 #logo:hover .sq0 > .sq {width: var(--circle-size-2); height: var(--circle-size-2); border-radius: 50%;}
 

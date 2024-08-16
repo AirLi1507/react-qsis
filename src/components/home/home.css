@@ -1,0 +1,14 @@
+#home {
+    font-size:xx-large  ;
+    color: #f0f8ff;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0, .5);
+
+    width: 100%;
+
+    background-color: #284aa0;
+    box-shadow: var(--box-shadow-1);
+    border: var(--border-1);
+    border-radius: 12px;
+    backdrop-filter: blur(calc(.5vh + .5vw));
+    -webkit-backdrop-filter: blur(calc(.5vh + .5vw));
+}

@@ -1,0 +1,29 @@
+li.nav-item {
+    list-style-type: none;
+    color: var(--acsent-color-2);
+    text-shadow: var(--text-shadow-1);
+    /* font-family: Arial, Helvetica, sans; */
+    font-size: 18px;
+    letter-spacing: -.75px;
+
+    margin-bottom: 16px;
+
+    border-bottom: 2px transparent solid;
+
+    transition: .3s ease;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+li.nav-item:hover {
+    border-color: var(--acsent-color-2);
+    transform: translateX(16px);
+}
+
+.nav-symbol {
+    color: var(--acsent-color-2);
+    font-size: 36px;
+    letter-spacing: -.5px;
+
+    margin-right: 6px;
+}

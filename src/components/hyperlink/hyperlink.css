@@ -12,5 +12,5 @@
 
 .hyperLink:hover, .hyperLink:active, .hyperLink:focus {
     color: #f0f8ff;
-    text-shadow: var(--text-shadow-3);
+    text-shadow: var(--text-shadow-1);
 }

@@ -2,7 +2,7 @@
     color: var(--acsent-color-2);
 
     background-color: #ffffff4d;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 0.85px var(--border-color-1) solid;
     outline: none;
 
@@ -11,10 +11,10 @@
     transition: all 0.45s ease;
 }
 
-.buttons:hover, .buttons:active, .buttons:focus {
+.buttons:hover, .buttons:active {
     color: #f0f8ff;
 
-    background-color: rgba(0, 128, 128, .7);
+    background-color: rgba(0, 165, 165, 0.7);
 
     -webkit-tap-highlight-color: transparent;
 }

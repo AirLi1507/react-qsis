@@ -1,7 +1,6 @@
 .field {
-    height: fit-content;
     background-color: #ffffff4d;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 0.85px var(--border-color-1) solid;
 
     box-sizing: border-box;
