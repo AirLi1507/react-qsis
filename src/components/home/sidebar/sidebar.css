@@ -1,14 +1,15 @@
 #sidebar {
-    width: 18svw;
-
-    margin-right: 1vw;
+    width: 100px;
 
     background-color: var(--bg-color);
     box-shadow: var(--box-shadow-1);
     border: var(--border-1);
-    border-radius: 12px;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    border-radius: 24px 0 0 24px;
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+
+    transition: 0.4s ease;
+    will-change: min-width, padding-left;
 }
 
 #nav-list {
@@ -19,9 +20,39 @@
 
 .brand {
     border-bottom: 2px var(--acsent-color-1) solid;
+    will-change: contents;
+}
 
+.brand > #smaller-title {display: none;}
+
+.brand > #smaller-logo {text-align: center; transform: scale(.55); transition: .5s ease;}
+
+#sidebar.active {
+    width: 328px;
+
+    padding-left: 12px;
+    padding-right: 10px;
+}
+
+#sidebar.active > ul {width: 240px; padding-left: 4px;}
+
+@media (max-width: 440px) {
+    #sidebar {
+        min-width: 77.5px;
+    }
+    #sidebar.active {
+        min-width: 250px;
+    
+        padding-left: 18px;
+    }    
+}
+
+.brand.active {
     justify-content: space-between;
     gap: 8px;
 
     padding: 16px 0 8px 0;
 }
+
+.brand.active > #smaller-logo {transform: scale(1);}
+.brand.active > #smaller-title {display: block;}

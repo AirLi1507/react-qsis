@@ -3,23 +3,24 @@ import { warnTextRemove } from "./rmWarnText"
 import { AddWarnText } from './warnText'
 import cyptjs from 'crypto-js'
 
-async function getKey() {
-    const response = await fetch(`https://api.hypernix.org/key`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
+let keyPromise = null;
 
-    const key = await response.text()
-    return key
+async function getKey() {
+    if (!keyPromise) {
+        keyPromise = fetch(`https://api.hypernix.org/key`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(response => response.text());
+    }
+    return keyPromise;
 }
 
-
 async function post(cred) {
-    const Key = await getKey()
+    const Key = await getKey();
 
-    const encrypted = cyptjs.AES.encrypt(cred, Key).toString()
+    const encrypted = cyptjs.AES.encrypt(cred, Key).toString();
 
     fetch(`https://api.hypernix.org/auth`, {
         method: 'POST',
@@ -28,17 +29,16 @@ async function post(cred) {
         },
         body: encrypted
     })
-    .then(response => {return response.json()})
+    .then(response => response.json())
     .then(data => {
         if (data === true) {
-            renderPage('home')
+            renderPage('home');
         } else {
-            document.querySelectorAll('.buttons')[0].after(AddWarnText('Login failed. Please check your username or password.'))
-            document.querySelector('.warnText').classList.add('mt-3')
+            document.querySelectorAll('.buttons')[0].after(AddWarnText('Login failed. Please check your username or password.'));
+            document.querySelector('.warnText').classList.add('mt-3');
         }
-    })
+    });
 }
-
 export function login() {
     warnTextRemove()
 

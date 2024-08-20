@@ -5,12 +5,12 @@ import './sidebar.css';
 
 function Sidebar() {
     return (
-        <div className='height-100 d-flex col p-4' id='sidebar'>
-            <div className='width-100 d-flex col alg-center brand'>
+        <aside className='height-100 d-flex col p-4' id='sidebar'>
+            <div className='d-flex col alg-center brand'>
                 <div id='smaller-logo'><Logo/></div>
                 <div id='smaller-title'><Title /></div>
             </div>
-            <ul id='nav-list' className='noselect'>
+            <ul id='nav-list' className='noselect d-flex col alg-center'>
                 <NavItem tab='1' symbol='home' nav='Home' />
                 <NavItem tab='2' symbol='person' nav='Student Profile' />
                 <NavItem tab='3' symbol='edit_note' nav='Homework' />
@@ -23,7 +23,7 @@ function Sidebar() {
                 <NavItem tab='10' symbol='settings' nav='Settings' />
                 <NavItem tab='11' symbol='logout' nav='Logout' />
             </ul>
-        </div>
+        </aside>
     )
 }
 

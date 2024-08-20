@@ -92,10 +92,10 @@
 
 /* Universal Margins - Start */
 
-.mg-top-auto {margin-top: auto;}
-.mg-bottom-auto {margin-bottom: auto;}
-.mg-left-auto {margin-left: auto;}
-.mg-right-auto {margin-right: auto;}
+.mt-auto {margin-top: auto;}
+.mb-auto {margin-bottom: auto;}
+.ml-auto {margin-left: auto;}
+.mr-auto {margin-right: auto;}
 .mx-auto {margin: 0 auto;}
 .my-auto {margin: auto 0;}
 .mg-auto {margin: auto;}

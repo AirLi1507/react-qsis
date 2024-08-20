@@ -1,6 +1,4 @@
 #login {
-    width: 320px;
-
     background-color: var(--bg-color);
     box-shadow: var(--box-shadow-1);
     border: var(--border-1);
@@ -24,13 +22,13 @@
 
         padding-left: 30px;
 
-        transform: scale(.85);
+        transform: scale(.825);
     }
 }
 
 @media (min-height: 611px) and (max-height: 899px) and (orientation: landscape) {
     #login {
-        width: 348px;
+        width: 328px;
 
         transform: scale(.9);
     }
@@ -52,7 +50,7 @@
 
 @media (min-height: 900px) and (max-height: 1280px) and (orientation: portrait) {
     #login {
-        width: 348px;
+        width: 328px;
         transform: scale(1);
     }
 }

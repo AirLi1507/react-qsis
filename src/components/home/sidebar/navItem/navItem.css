@@ -1,29 +1,64 @@
 li.nav-item {
     list-style-type: none;
+
     color: var(--acsent-color-2);
     text-shadow: var(--text-shadow-1);
-    /* font-family: Arial, Helvetica, sans; */
-    font-size: 18px;
-    letter-spacing: -.75px;
 
-    margin-bottom: 16px;
+    width: fit-content;
 
-    border-bottom: 2px transparent solid;
+    margin-bottom: 18px;
+
+    border: 3.5px transparent solid;
+    border-radius: 4px;
+
+    padding: 0 4px;
 
     transition: .3s ease;
+    will-change: border-color, border-radius;
 
     -webkit-tap-highlight-color: transparent;
 }
 
 li.nav-item:hover {
     border-color: var(--acsent-color-2);
-    transform: translateX(16px);
+    border-radius: 10px;
 }
+
+span.nav-name {
+    opacity: 0;
+    margin-left: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+span.nav-name.active {
+    opacity: 1;
+    margin-left: 6px;
+    position: relative;
+    z-index: inherit;
+}
+
 
 .nav-symbol {
     color: var(--acsent-color-2);
     font-size: 36px;
-    letter-spacing: -.5px;
+}
 
-    margin-right: 6px;
+li.nav-item.active {
+    font-size: 17.5px;
+    letter-spacing: -.675px;
+
+    width: fit-content;
+
+    border: unset;
+    border-color: transparent;
+    border-bottom: 2px transparent solid;
+    border-radius: unset;
+    will-change: font-size, letter-spacing; 
+}
+
+li.nav-item.active:hover {
+    border-color: var(--acsent-color-2);
+    transform: translateX(12px);
+    will-change: border-color, transform;
 }

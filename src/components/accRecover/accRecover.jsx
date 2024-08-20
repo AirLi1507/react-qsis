@@ -18,12 +18,10 @@ const recover = (element) => {
         })
         const remindTxt = document.createElement('span')
         remindTxt.innerText = `An email has been sent to ${username}@qos.edu.hk for recovery.`
-        remindTxt.classList.add('remindText','fs-3','fw-5','bs5-green', 'txt-center', 'mt-3')
+        remindTxt.classList.add('remindText','fs-3','fw-5','bs5-green', 'txt-center', 'width-100', 'mt-3', 'mx-auto')
         element.after(remindTxt)
     } else {
-        if (username === '') {
-            document.getElementsByClassName('field')[0].after(AddWarnText('The username field must be filled.'))
-        }
+        document.getElementsByClassName('field')[0].after(AddWarnText('The username field must be filled.'))
     }
 }
 
@@ -37,7 +35,9 @@ const AccRecover = () => {
             <div className='width-100 height-fc d-flex col jc-center' >
                 <span className='fs-4 fw-5 txt-center mt-3 noselect' id='recoveryTitle'>Account Recovery Process</span>
                 <InputHint class='fs-5 mt-7' symbol='tag' hint='Username' htmlFor='recoverID'/>
-                <InputField class='mt-1 mb-2 d-flex alg-center' elementID='recoverID' autoComp='username' type='text' enter={(e)=>{recover()}}/>
+                <InputField class='mt-1 mb-2 d-flex alg-center' elementID='recoverID' autoComp='username' type='text' enter={
+                    ()=>{recover(document.getElementsByClassName('buttons')[0])}
+                }/>
                 <Button class='mt-2 fs-4 fw-6' btnText='Recover' func={(e)=>{recover(e.target)}}/>
                 <HyperLink class='mt-4 fs-4 fw-6' symbol='arrow_back' text='Go back' func={()=>{renderPage('login')}} />
             </div>
