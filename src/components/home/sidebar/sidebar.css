@@ -9,7 +9,7 @@
     -webkit-backdrop-filter: blur(7.5px);
 
     transition: 0.4s ease;
-    will-change: min-width, padding-left;
+    will-change: width, padding-left, padding-right, overflow-x;
 }
 
 #nav-list {
@@ -20,30 +20,34 @@
 
 .brand {
     border-bottom: 2px var(--acsent-color-1) solid;
-    will-change: contents;
+    will-change: auto;
 }
 
-.brand > #smaller-title {display: none;}
+.brand > #smaller-title {text-align: center; display: none;}
 
-.brand > #smaller-logo {text-align: center; transform: scale(.55); transition: .5s ease;}
+.brand > #smaller-logo {transform: scale(.55); transition: .5s ease;}
 
 #sidebar.active {
     width: 328px;
 
     padding-left: 12px;
     padding-right: 10px;
+
+    overflow-x: hidden;
 }
 
 #sidebar.active > ul {width: 240px; padding-left: 4px;}
 
 @media (max-width: 440px) {
     #sidebar {
-        min-width: 77.5px;
+        width: 77.5px;
     }
     #sidebar.active {
-        min-width: 250px;
+        width: 280px;
     
         padding-left: 18px;
+    
+        overflow-x: unset;
     }    
 }
 
